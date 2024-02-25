@@ -1,5 +1,5 @@
 import React from "react";
-const CardDescription = () => {
+const CardDescription = ({ userDetail }) => {
   return (
     <>
       <div className="px-4 sm:px-0 ">
@@ -17,7 +17,7 @@ const CardDescription = () => {
               Nombre
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              Margot Foster
+              {userDetail.name}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -25,7 +25,7 @@ const CardDescription = () => {
               Usuario
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              Backend Developer
+              @{userDetail.username}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -33,7 +33,7 @@ const CardDescription = () => {
               Email
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              margotfoster@example.com
+              {userDetail.email}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -41,7 +41,7 @@ const CardDescription = () => {
               Ciudad
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              $120,000
+              {userDetail.address.city}
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -49,7 +49,15 @@ const CardDescription = () => {
               Empresa
             </dt>
             <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              $120,000
+              {userDetail.company.name}
+            </dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm font-medium leading-6 text-gray-900">
+              Pagina web
+            </dt>
+            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+              https://{userDetail.website}
             </dd>
           </div>
         </dl>
