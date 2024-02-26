@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card se renderiza correctamente 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-24 md:mb-0"
+  >
+    <div
+      class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="flex justify-center"
+      >
+        <div
+          class="flex justify-center -mt-[75px]"
+        >
+          <img
+            alt="John Doe"
+            class="mx-auto rounded-full shadow-lg  w-[150px]"
+            data-nimg="1"
+            decoding="async"
+            height="110"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fexample.com%2Favatar.jpg&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fexample.com%2Favatar.jpg&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fexample.com%2Favatar.jpg&w=256&q=75 2x"
+            style="color: transparent;"
+            width="110"
+          />
+        </div>
+      </div>
+      <div
+        class="px-6 pb-6 pt-2"
+      >
+        <h5
+          class="text-xl font-bold"
+        >
+          John Doe
+        </h5>
+        <p
+          class="text-lg pb-4"
+        >
+          @johndoe
+        </p>
+        <div
+          class="flex items-center gap-2"
+        >
+          <img
+            alt="icon"
+            class="h-5 w-5"
+            data-nimg="1"
+            decoding="async"
+            height="20"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=64&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=64&q=75 2x"
+            style="color: transparent;"
+            width="30"
+          />
+          <a
+            href="https://www.google.com/search?q=Example Company"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class="text-zinc-700 cursor-pointer"
+            >
+              Example Company
+            </span>
+          </a>
+        </div>
+        <div
+          class="flex items-center gap-2"
+        >
+          <img
+            alt="icon"
+            class="h-5 w-5"
+            data-nimg="1"
+            decoding="async"
+            height="20"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=48&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=48&q=75 2x"
+            style="color: transparent;"
+            width="20"
+          />
+          <a
+            href="https://www.google.com.ar/maps/search/Example City"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class="text-zinc-700 cursor-pointer"
+            >
+              Example City
+            </span>
+          </a>
+        </div>
+        <div
+          class="flex items-center gap-2"
+        >
+          <img
+            alt="icon"
+            class="h-5 w-5"
+            data-nimg="1"
+            decoding="async"
+            height="20"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=48&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=48&q=75 2x"
+            style="color: transparent;"
+            width="20"
+          />
+          <a
+            href="mailto:johndoe@example.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class="text-zinc-700 cursor-pointer"
+            >
+              johndoe@example.com
+            </span>
+          </a>
+        </div>
+        <div
+          class="flex items-center gap-2"
+        >
+          <img
+            alt="icon"
+            class="h-5 w-5"
+            data-nimg="1"
+            decoding="async"
+            height="20"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=48&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=48&q=75 2x"
+            style="color: transparent;"
+            width="20"
+          />
+          <span
+            class="text-zinc-700 cursor-pointer"
+          >
+            123-456-7890
+          </span>
+        </div>
+        <div
+          class="flex items-center justify-center pt-6"
+        >
+          <a
+            href="/1"
+          >
+            <button
+              class="bg-[#6D8A96] hover:bg-[#a0b3ba] text-white text-sm font-bold py-2 px-4 rounded"
+            >
+              Más info
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

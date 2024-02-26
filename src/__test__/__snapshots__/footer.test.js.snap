@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer se renderiza correctamente 1`] = `
+<DocumentFragment>
+  <footer
+    class="flex items-center gap-2 bg-white h-20 justify-end px-5"
+  >
+    <a
+      href="https://github.com/fabiandasilva"
+      target="_blank"
+    >
+      <img
+        alt="icon"
+        class="h-5 w-5"
+        data-nimg="1"
+        decoding="async"
+        height="20"
+        loading="lazy"
+        src="/_next/image?url=%2Fimg.jpg&w=48&q=75"
+        srcset="/_next/image?url=%2Fimg.jpg&w=32&q=75 1x, /_next/image?url=%2Fimg.jpg&w=48&q=75 2x"
+        style="color: transparent;"
+        width="20"
+      />
+    </a>
+    <span
+      class="text-zinc-700 cursor-pointer"
+    >
+      <a
+        href="https://www.linkedin.com/in/fabiandasilva/"
+        target="_blank"
+      >
+        Fabian Da Silva
+      </a>
+    </span>
+  </footer>
+</DocumentFragment>
+`;

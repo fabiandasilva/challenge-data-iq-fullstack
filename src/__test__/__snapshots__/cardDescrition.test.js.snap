@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardDescription se renderiza correctamente 1`] = `
+<DocumentFragment>
+  <div
+    class="px-4 sm:px-0 "
+  >
+    <h3
+      class="text-base font-semibold leading-7 text-gray-900"
+    >
+      Información personal
+    </h3>
+    <p
+      class="mt-1 max-w-2xl text-sm leading-6 text-gray-500"
+    >
+      Datos personales del usuario
+    </p>
+  </div>
+  <div
+    class="mt-6 border-t border-gray-100"
+  >
+    <dl
+      class="divide-y divide-gray-100"
+    >
+      <div
+        class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
+      >
+        <dt
+          class="text-sm font-medium leading-6 text-gray-900"
+        >
+          Nombre
+        </dt>
+        <dd
+          class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+        >
+          Nombre de ejemplo
+        </dd>
+      </div>
+      <div
+        class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
+      >
+        <dt
+          class="text-sm font-medium leading-6 text-gray-900"
+        >
+          Usuario
+        </dt>
+        <dd
+          class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+        >
+          @ejemplo
+        </dd>
+      </div>
+      <div
+        class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
+      >
+        <dt
+          class="text-sm font-medium leading-6 text-gray-900"
+        >
+          Email
+        </dt>
+        <dd
+          class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+        >
+          ejemplo@example.com
+        </dd>
+      </div>
+      <div
+        class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
+      >
+        <dt
+          class="text-sm font-medium leading-6 text-gray-900"
+        >
+          Ciudad
+        </dt>
+        <dd
+          class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+        >
+          Ciudad de ejemplo
+        </dd>
+      </div>
+      <div
+        class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
+      >
+        <dt
+          class="text-sm font-medium leading-6 text-gray-900"
+        >
+          Empresa
+        </dt>
+        <dd
+          class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+        >
+          Empresa de ejemplo
+        </dd>
+      </div>
+      <div
+        class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
+      >
+        <dt
+          class="text-sm font-medium leading-6 text-gray-900"
+        >
+          Pagina web
+        </dt>
+        <dd
+          class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+        >
+          https://www.ejemplo.com
+        </dd>
+      </div>
+    </dl>
+  </div>
+</DocumentFragment>
+`;
