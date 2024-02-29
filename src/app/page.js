@@ -23,14 +23,14 @@ const Home = () => {
   const findUser = (e) => {
     const searchValue = e.target.value.toLowerCase();
     setSearch(searchValue);
-    console.log(searchValue);
+    // console.log(searchValue);
 
     const result = user.filter(
       (users) =>
         users.name.toLowerCase().includes(search.toLowerCase()) ||
         users.username.toLowerCase().includes(search.toLowerCase()) ||
         users.address.city.toLowerCase().includes(search.toLowerCase) ||
-        users.emial.toLowerCase().includes(search.toLowerCase())
+        users.email.toLowerCase().includes(search.toLowerCase())
     );
 
     setSearchResult(result);
@@ -52,7 +52,12 @@ const Home = () => {
 
   return (
     <>
-      <Navbar hideSearchBar={false} search={search} setSearch={setSearch} />
+      <Navbar
+        hideSearchBar={false}
+        findUser={findUser}
+        search={search}
+        setSearch={setSearch}
+      />
 
       {search !== "" && serchResult.length === 0 ? (
         <div className="container mx-auto mt-24 px-4 py-8 text-center">

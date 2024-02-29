@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/image/icons/nav-logo.png";
 
-const Navbar = ({ hideSearchBar, search, setSearch }) => {
+const Navbar = ({ findUser, hideSearchBar, search, setSearch }) => {
   return (
     <nav className="px-1.5 py-4 sm:p-6 w-full bg-white drop-shadow-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -27,7 +27,7 @@ const Navbar = ({ hideSearchBar, search, setSearch }) => {
                 placeholder="Buscar por nombre, email o ciudad..."
                 className="flex-grow bg-transparent outline-none w-full text-sm"
                 value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={(e) => findUser(e)}
               />
             </span>
             <span className="sm:hidden">
