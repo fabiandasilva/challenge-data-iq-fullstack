@@ -8,6 +8,7 @@ import Skeleton from "../components/Skeleton";
 const Home = () => {
   const [user, setUser] = useState([]);
   const [search, setSearch] = useState("");
+  const [serchResult, setSearchResult] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -19,13 +20,21 @@ const Home = () => {
     fetchData();
   }, []);
 
-  const findUser = user.filter(
-    (user) =>
-      user.name.toLowerCase().includes(search.toLowerCase()) ||
-      user.address.city.toLowerCase().includes(search.toLowerCase()) ||
-      user.username.toLowerCase().includes(search.toLowerCase()) ||
-      user.email.toLowerCase().includes(search.toLowerCase())
-  );
+  const findUser = (e) => {
+    const searchValue = e.target.value.toLowerCase();
+    setSearch(searchValue);
+    console.log(searchValue);
+
+    const result = user.filter(
+      (users) =>
+        users.name.toLowerCase().includes(search.toLowerCase()) ||
+        users.username.toLowerCase().includes(search.toLowerCase()) ||
+        users.address.city.toLowerCase().includes(search.toLowerCase) ||
+        users.emial.toLowerCase().includes(search.toLowerCase())
+    );
+
+    setSearchResult(result);
+  };
 
   useEffect(() => {
     if (search !== "") {
@@ -39,11 +48,13 @@ const Home = () => {
     }
   }, [search]);
 
+  const renderDisplay = search ? serchResult : user;
+
   return (
     <>
       <Navbar hideSearchBar={false} search={search} setSearch={setSearch} />
 
-      {findUser.length === 0 ? (
+      {search !== "" && serchResult.length === 0 ? (
         <div className="container mx-auto mt-24 px-4 py-8 text-center">
           <h1 className="text-3xl font-bold">No se encontraron resultados</h1>
         </div>
@@ -52,12 +63,12 @@ const Home = () => {
           <div className="grid gap-8 gap-y-8 md:gap-y-24 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-x-12">
             {loading ? (
               <>
-                {findUser.map((user) => (
+                {renderDisplay.map((user) => (
                   <Skeleton key={user.id} />
                 ))}
               </>
             ) : (
-              findUser.map((user) => <Card user={user} key={user.id} />)
+              renderDisplay.map((user) => <Card user={user} key={user.id} />)
             )}
           </div>
         </div>
